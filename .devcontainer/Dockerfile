@@ -29,12 +29,12 @@ RUN wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF
 
 COPY openssl.cnf /usr/lib/ssl/openssl.cnf
 
-RUN adduser --shell /usr/bin/zsh --gecos '' --ingroup sudo --disabled-password bap
+RUN adduser --shell /usr/bin/zsh --gecos '' --ingroup sudo --disabled-password wg
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-USER bap
+USER wg
 
 RUN sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 RUN git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-COPY .zshrc /home/bap
-COPY .p10k.zsh /home/bap
+COPY .zshrc /home/wg
+COPY .p10k.zsh /home/wg

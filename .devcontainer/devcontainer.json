@@ -1,10 +1,10 @@
 {
-    "name": "BAP-devcontainer",
+    "name": "WG-devcontainer",
     "build": {
         "dockerfile": "Dockerfile"
     },
     "mounts": [
-        "source=/home/ttranpphu/.ssh,target=/home/bap/.ssh,type=bind,consistency=cached"
+        "source=/home/ttranpphu/.ssh,target=/home/wg/.ssh,type=bind,consistency=cached"
     ],
     "postCreateCommand": "sh .devcontainer/post-create.sh",
     "customizations": {

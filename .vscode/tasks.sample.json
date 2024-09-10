@@ -171,20 +171,11 @@
                 "key": "name",
                 "options": [
                     [
-                        "Crafting",
+                        "BAP",
                         {
-                            "name": "crafting",
-                            "testing": "kogscrafting",
-                            "production": "redeem.kogs",
-                            "optional": ""
-                        }
-                    ],
-                    [
-                        "Unpacking",
-                        {
-                            "name": "unpacking",
-                            "testing": "kogsunpackwx",
-                            "production": "unpack.kogs",
+                            "name": "bap",
+                            "testing": "",
+                            "production": "",
                             "optional": "${workspaceFolder}/contracts/random-provider.cpp"
                         }
                     ]
