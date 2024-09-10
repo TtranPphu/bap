@@ -96,6 +96,23 @@
             "problemMatcher": []
         },
         {
+            "label": "Create wallet",
+            "type": "shell",
+            "command": "sh",
+            "args": [
+                "init-wallet.sh"
+            ],
+            "presentation": {
+                "echo": false,
+                "reveal": "never",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "problemMatcher": []
+        },
+        {
             "label": "Unlock",
             "type": "shell",
             "command": "cleos",
