@@ -100,7 +100,7 @@
             "type": "shell",
             "command": "sh",
             "args": [
-                "init-wallet.sh"
+                "shellscripts/init-wallet.sh"
             ],
             "presentation": {
                 "echo": false,
