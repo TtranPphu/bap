@@ -1,0 +1,11 @@
+*.wasm
+*.abi
+*.xlsx
+*.log
+*.pyc
+*.ipynb_checkpoints
+.vscode/tasks.json
+
+# phu's
+random/**
+kogs-sale-be
